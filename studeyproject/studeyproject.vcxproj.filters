@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\struct">
+      <UniqueIdentifier>{bedee817-6bf8-4431-aa70-436f495a85d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\struct_pointer">
+      <UniqueIdentifier>{e58cec7f-37f8-4ddd-b684-80a9791ae075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\goto lable">
+      <UniqueIdentifier>{5a0a5a24-162f-41dc-9c4f-648e86195c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\pointer">
+      <UniqueIdentifier>{0bb4f6f2-c0cd-4735-b655-7d3241882f00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exam01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam02.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam03.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam04.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam05.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam06.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="struct01.c">
+      <Filter>소스 파일\struct</Filter>
+    </ClCompile>
+    <ClCompile Include="struct02.c">
+      <Filter>소스 파일\struct</Filter>
+    </ClCompile>
+    <ClCompile Include="struct03.c">
+      <Filter>소스 파일\struct</Filter>
+    </ClCompile>
+    <ClCompile Include="exam07.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam08.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="struct04.c">
+      <Filter>소스 파일\struct</Filter>
+    </ClCompile>
+    <ClCompile Include="goto.c">
+      <Filter>소스 파일\goto lable</Filter>
+    </ClCompile>
+    <ClCompile Include="if_multople_loop.c">
+      <Filter>소스 파일\goto lable</Filter>
+    </ClCompile>
+    <ClCompile Include="goto_error_pattern.c">
+      <Filter>소스 파일\goto lable</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer01.c">
+      <Filter>소스 파일\pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer.c">
+      <Filter>소스 파일\pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="dereference.c">
+      <Filter>소스 파일\pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer02.c">
+      <Filter>소스 파일\pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_type.c">
+      <Filter>소스 파일\pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="exam09.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="void_pointer.c">
+      <Filter>소스 파일\pointer</Filter>
+    </ClCompile>
+    <ClCompile Include="exam10.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam10_charIf.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="exam08_switch.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
