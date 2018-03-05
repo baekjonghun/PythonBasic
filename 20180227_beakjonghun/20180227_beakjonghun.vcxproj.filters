@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart">
+      <UniqueIdentifier>{65c93ae2-212e-4c5f-80e9-d7a9b63823b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter03_InputOutput">
+      <UniqueIdentifier>{2e42bc14-1cff-4043-91c6-cba5f9d43835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter05_operatorLv2">
+      <UniqueIdentifier>{ec44e7f7-0be3-433e-9ff9-8532bf987ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter06_statement">
+      <UniqueIdentifier>{55d695bc-e7a0-4444-aeec-94d0e73a91c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter07_loopstation">
+      <UniqueIdentifier>{278b7c4d-8728-4df7-badd-b8d931f075a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter08_array">
+      <UniqueIdentifier>{d399611e-df37-4e94-96cc-727feb56fcac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter09_arrayProgramming">
+      <UniqueIdentifier>{99966cf5-b6e1-4110-b859-bc62c88b039e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter11_memory&amp;pointer">
+      <UniqueIdentifier>{68b332e4-71ff-4184-a82e-a11d0344e1fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter12_functionLv2">
+      <UniqueIdentifier>{2645abfa-ebbf-412c-80cb-7757d101a714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter04_operatorLv1">
+      <UniqueIdentifier>{7a396950-fb16-4a5c-94d9-af7021378f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter10_functionLv1">
+      <UniqueIdentifier>{79036f68-25a5-4dec-a8de-61ca16d57705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter13_Structure&amp;union">
+      <UniqueIdentifier>{52cf8a41-c02b-4043-9f4b-0cd2e659d9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter14">
+      <UniqueIdentifier>{4bc6fdff-1cb9-4bb7-aca8-bb659cc5a389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter15">
+      <UniqueIdentifier>{d1aeaf00-b4ac-4b4e-8f85-4f120c4b7047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter16">
+      <UniqueIdentifier>{038aac2a-5819-47c7-8d34-31bafe85b36a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\chapter17">
+      <UniqueIdentifier>{160cdf8d-ba75-4432-9e8b-012b18a3e00b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\c BookStart\NewFilter1">
+      <UniqueIdentifier>{aa92b43e-5208-40e4-a9f0-3460c16db87e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="getchar01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="getch01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="gets01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="escseq.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="charint01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="intover01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="longlongint01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="format01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="floatprintf01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="floatacc01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="floatformat01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="scanfint.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="scanfage.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="scanfcharo1.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="scanfstring01.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="scanfstring02.c">
+      <Filter>소스 파일\c BookStart\chapter03_InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="operator1.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="operator02.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="TypePromotion.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opdoubleint02.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opdividebyzero.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="operlator04.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opassign.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opassugnconst01.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opswap1.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opcomassign01.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opassgn02.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="accerrorex03.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opcast01.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opinc01.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opinc02.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opbit01.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opmask01.c">
+      <Filter>소스 파일\c BookStart\chapter04_operatorLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="opsizeof01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="oprelational01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="oplogical01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="oplogical02.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="oplogicalerror01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="oplogicalnot01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="opshortcircuit01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="opcondi01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="maxsurvival01.c">
+      <Filter>소스 파일\c BookStart\chapter05_operatorLv2</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlbranch01.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlifelse01.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlifeelse02.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlclassiftbin01.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrildsearch01.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlclassify02.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlswitchcase01.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlswtichcase02.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlgoto01.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="opswap1.cpp">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlendless01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlendless02.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlwhilevariable01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlestedloop01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlfor01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlnestedfor01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrldownwhile01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlbreak01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlcontinue01.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="if_multiple_loop.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="goto.c">
+      <Filter>소스 파일\c BookStart\chapter06_statement</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrlbreak02.c">
+      <Filter>소스 파일\c BookStart\chapter07_loopstation</Filter>
+    </ClCompile>
+    <ClCompile Include="array01.c">
+      <Filter>소스 파일\c BookStart\chapter08_array</Filter>
+    </ClCompile>
+    <ClCompile Include="array02.c">
+      <Filter>소스 파일\c BookStart\chapter08_array</Filter>
+    </ClCompile>
+    <ClCompile Include="arrayerror01.c">
+      <Filter>소스 파일\c BookStart\chapter08_array</Filter>
+    </ClCompile>
+    <ClCompile Include="arraycpy01.c">
+      <Filter>소스 파일\c BookStart\chapter08_array</Filter>
+    </ClCompile>
+    <ClCompile Include="maxformarray01.c">
+      <Filter>소스 파일\c BookStart\chapter08_array</Filter>
+    </ClCompile>
+    <ClCompile Include="functionEx01.c">
+      <Filter>소스 파일\c BookStart\chapter10_functionLv1</Filter>
+    </ClCompile>
+    <ClCompile Include="varTest03.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="averageTest.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="helloC.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="oper01Test.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorTet_01.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="varTest01.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="varTest02.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="exam01.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="exam02.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="exam03.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="exam04.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="functionTest.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="operEx01.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="operEx02.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="operEx03.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="operEx04.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="operEx05.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="scanfInput.c">
+      <Filter>소스 파일\c BookStart\NewFilter1</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
