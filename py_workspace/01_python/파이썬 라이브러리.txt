@@ -1,0 +1,14 @@
+
+출처: http://devnauts.tistory.com/69 [devnauts]
+
+
+https://tensorflow.blog/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/1-4-%ED%95%84%EC%88%98-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-%EB%8F%84%EA%B5%AC%EB%93%A4/
+
+
+
+http://jangjy.tistory.com/250
+
+
+아나콘다 (유용한 라이브러리 모음)
+https://www.anaconda.com/download/
+

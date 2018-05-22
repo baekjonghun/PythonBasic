@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e7b644ee-81af-4ce2-a5e6-80c65ad407e2}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>03_dataType\averageTest.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="01_python\문자열 포맷코드.txt" />
+    <Content Include="01_python\이스케이프.txt" />
+    <Content Include="01_python\자료형의 참과 거짓.txt" />
+    <Content Include="01_python\파이썬 기본라이브러리.txt" />
+    <Content Include="01_python\파이썬 라이브러리.txt" />
+    <Content Include="01_python\파이썬 연산자.txt" />
+    <Content Include="01_python\파이썬 오픈소스.txt" />
+    <Content Include="01_python\파이썬 정규 표현식\jhkim-140117-RegularExpression-08-1.png" />
+    <Content Include="01_python\파이썬 정규 표현식\jhkim-140117-RegularExpression-191.png" />
+    <Content Include="01_python\파이썬 정규 표현식\jhkim-140117-RegularExpression-21.png" />
+    <Content Include="01_python\파이썬 키워드.txt" />
+    <Content Include="01_python\파이썬 파일.txt" />
+    <Content Include="01_python\파이썬 할 수 있는일.txt" />
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="02_pythonUtill\class1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="02_pythonUtill\euc-kr.py" />
+    <Compile Include="02_pythonUtill\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_dataType\averageTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_dataType\boolTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_dataType\dictionaryTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_dataType\integer.py" />
+    <Compile Include="03_dataType\listTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_dataType\setTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_dataType\str.py" />
+    <Compile Include="03_dataType\strFormatting.py" />
+    <Compile Include="03_dataType\strFunction.py" />
+    <Compile Include="03_dataType\tupleTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="04_controllStatement\forTest.py" />
+    <Compile Include="04_controllStatement\ifTest.py" />
+    <Compile Include="04_controllStatement\whileTest.py" />
+    <Compile Include="05_function\dicFunction.py" />
+    <Compile Include="05_function\FileReadWrite.py" />
+    <Compile Include="05_function\InputOutputTest.py" />
+    <Compile Include="05_function\tupleFunction.py" />
+    <Compile Include="06_OBJECT\ClassTest.py" />
+    <Compile Include="06_OBJECT\mod1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="01_python" />
+    <Folder Include="01_python\파이썬 정규 표현식" />
+    <Folder Include="02_pythonUtill" />
+    <Folder Include="03_dataType" />
+    <Folder Include="04_controllStatement" />
+    <Folder Include="05_function" />
+    <Folder Include="06_OBJECT" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
