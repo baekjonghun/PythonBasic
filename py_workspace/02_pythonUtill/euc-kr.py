@@ -1,7 +1,8 @@
-import sys
+﻿import sys
 print(sys.stdin.encoding) #시스템의 인코딩 방식 예)cp949
 
-
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 
 han =  '가'
 print(han) #한글이 께진다

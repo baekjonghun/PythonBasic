@@ -1,0 +1,167 @@
+ WikiDocs
+07-6 소트
+소트(Sort)방법에 대해서 좀 더 자세하게 알아보도록 하자.
+
+평범한 소트
+key를 이용하여 소트하기
+operator 모듈
+순차 정렬과 역순 정렬
+중첩 소트
+평범한 소트
+자주 사용해 왔던 소트를 먼저 보자.
+
+>>> a = [5, 3, 1, 4, 2]
+>>> sorted(a)
+[1, 2, 3, 4, 5]
+sorted 라는 내장함수를 사용하면 위와 같이 입력으로 받은 리스트를 소트하여 새로운 리스트를 리턴해 준다.
+
+또는 다음과 같이 소트할 수도 있다.
+
+>>> a = [5, 3, 1, 4, 2]
+>>> a.sort()
+>>> a
+[1, 2, 3, 4, 5]
+리스트의 sort함수를 이용하면 리스트 그 자체를 소트할 수 있다. 위에서 살펴보았던 sorted와의 차이점은 sorted는 소트 후 새로운 리스트를 리턴한다는 점이고 리스트 자체의 sort함수는 리스트 그 자체를 소트시킨다는 점이 다르다.
+
+하지만 sorted는 다음과 같은것도 가능하게 해 주는 기특한 점이 있다.
+
+>>> b = {"c":90, "b":45, "a": 88}
+>>> sorted(b)
+['a', 'b', 'c']
+딕셔너리처럼 반복이 가능한(iterable) 객체는 sorted를 사용할 수 있다. 딕셔너리에 sorted를 적용하면 딕셔너리의 키 값들을 소트하여 리턴한다.
+
+key를 이용하여 소트하기
+이번에는 조금 어려운 소트를 해 보도록 하자.
+
+먼저 다음과 같은 리스트를 생각해 보자.
+
+students = [
+    ("jane", 22, 'A'),
+    ("dave", 32, 'B'),
+    ("sally", 17, 'B'),
+]
+students라는 리스트는 총 3개의 튜플을 가지고 있다. 각 튜플은 순서대로 "이름", "나이", "성적"에 해당되는 데이터를 갖는다.
+
+이 리스트를 나이 순으로 소트하려면 어떻게 해야 할까?
+
+이런 경우에는 sort 또는 sorted의 key파라미터를 이용하여 소트해야 한다.
+
+>>> students = [
+...     ("jane", 22, 'A'),
+...     ("dave", 32, 'B'),
+...     ("sally", 17, 'B'),
+... ]
+>>> sorted(students, key=lambda student: student[1])
+[('sally', 17, 'B'), ('jane', 22, 'A'), ('dave', 32, 'B')]
+key파라미터에는 함수가 와야 한다. key 파라미터에 함수가 설정되면 소트해야 할 리스트들의 항목들이 하나씩 key 함수에 전달되어 key 함수가 실행되게 된다. 이 때 수행된 key 함수의 리턴값을 기준으로 소트가 진행된다.
+
+위 예에서는 key함수에 students의 요소인 튜플데이터가 key함수의 입력으로 순차적으로 전달될 것이다. key함수는 입력된 튜플 데이터의 "나이"를 의미하는 2번째 항목을 리턴하는 lambda함수이다. 따라서 sorted수행 후 나이순으로 소트된 리스트가 리턴된다.
+
+이번에는 객체로 이루어진 리스트를 소트해 보도록 하자.
+
+우선 다음과 같은 클래스를 만들어 보자.
+
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def __repr__(self):
+        return repr((self.name, self.age, self.grade))
+Student클래스는 이름, 나이, 성적을 생성자의 입력으로 받아서 객체를 생성하는 클래스이다. 따라서 Student 클래스는 다음과 같이 사용해야 한다.
+
+>>> student = Student('jane', 22, 'A')
+>>> print(student.name)
+jane
+>>> print(student.age)
+22
+__repr__ 함수는 Student클래스에 의해서 생성된 객체를 출력할 때 사용된다. 즉, 다음과 같이 print를 이용하여 객체를 출력할 때 호출되게 된다.
+
+>>> student = Student('jane', 22, 'A')
+>>> print(student)
+('jane', 22, 'A')
+이제 Student클래스를 이용하여 다음과 같은 리스트를 생성해 보자.
+
+student_objects = [
+    Student('jane', 22, 'A'),
+    Student('dave', 32, 'B'),
+    Student('sally', 17, 'B'),
+]
+그리고 이 리스트를 key함수를 이용하여 나이순서대로 소트해 보자.
+
+result = sorted(student_objects, key=lambda student: student.age)
+print(result)
+위와 같이 key함수를 만들면 객체의 객체변수인 age값을 이용하여 소트하게 된다.
+
+따라서 결과값은 나이 순서데로 소트되어 다음과 같이 출력될 것이다.
+
+[('sally', 17, 'B'), ('jane', 22, 'A'), ('dave', 32, 'B')]
+operator 모듈
+이번에는 key함수에 lambda함수대신 operator 모듈을 이용하는 방법에 대해서 알아보자.
+
+위에서 살펴본 2개의 예제는 operator모듈의 itemgetter와 attrgetter를 이용하면 좀 더 간략하게 작성할 수 있다.
+
+첫번째 예제는 튜플의 2번째 요소로 소트를 하기 때문에 itemgetter를 대신 사용할 수 있다.
+
+from operator import itemgetter
+
+students = [
+    ("jane", 22, 'A'),
+    ("dave", 32, 'B'),
+    ("sally", 17, 'B'),
+]
+
+result = sorted(students, key=itemgetter(1))
+itemgetter(1)과 같이 사용하면 students의 item인 튜플의 2번째 요소로 소트를 하겠다는 의미이다.
+
+두번째 예제는 객체의 객체변수로 소트를 하기 때문에 다음과 같이 attrgetter를 대신 사용할 수 있다.
+
+from operator import attrgetter
+
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def __repr__(self):
+        return repr((self.name, self.age, self.grade))
+
+
+student_objects = [
+    Student('jane', 22, 'A'),
+    Student('dave', 32, 'B'),
+    Student('sally', 17, 'B'),
+]
+
+result = sorted(student_objects, key=attrgetter('age'))
+attrgetter('age')와 같이 사용하면 students_objects의 요소인 Student 객체의 객체변수 age로 소트를 하겠다는 의미이다.
+
+순차 정렬과 역순 정렬
+위 예제는 나이순으로 정렬을 했다. 그렇다면 나이가 큰 순서(역순)대로 정렬하려면 어떻게 하면 될까?
+
+sort 또는 sorted함수에 reverse라는 파라미터를 이용하면 역순 정렬이 가능하다. 즉, 위 예제를 나이의 역순으로 정렬하려면 다음과 같이 reverse 파라미터를 추가하면 된다.
+
+>>> sorted(student_objects, key=attrgetter('age'), reverse=True)
+[('dave', 32, 'B'), ('jane', 22, 'A'), ('sally', 17, 'B')]
+중첩 소트
+이번에는 중첩해서 소트를 해야하는 경우에 대해서 알아보자.
+
+위 두번째 예제에서 먼저 "성적"으로 소트하고 "성적"이 같을 경우 나이순으로 소트해야 한다고 가정해 보자.
+
+만약 성적으로 소트를 하고 그 다음에 나이순으로 소트한다면 어떻게 될까?
+
+>>> result = sorted(student_objects, key=attrgetter('grade'))
+>>> sorted(result, key=attrgetter('age'))
+[('sally', 17, 'B'), ('jane', 22, 'A'), ('dave', 32, 'B')]
+다시 나이순으로 재 정렬되어 이미 "성적"으로 소트했던 결과가 무시되어 버린다.
+
+이렇게 "성적"으로 소트하고 "성적"이 같을 경우 "나이"로 소트해야 할 경우에는 순서를 뒤 바꾸어 소트를 해 주면 된다. 즉 "나이"로 먼저 소트하고 그 다음에 "성적"으로 소트를 하면 된다.
+
+>>> result = sorted(student_objects, key=attrgetter('age'))
+>>> sorted(result, key=attrgetter('grade'))
+[('jane', 22, 'A'), ('sally', 17, 'B'), ('dave', 32, 'B')]
+이렇게 순서를 바꾸어 소트를 해 주어야 제대로 된 결과를 얻을 수 있게 된다.
+
+이것이 가능한 이유는 소트할 때 기존의 순서를 그대로 유지하는(stable) 특성이 있기 때문이다. 위 예에서 보면 sally와 dave의 "성적"은 동일하지만 "나이"로 먼저 소트를 해 놓았기 때문에 그 순서가 유지되어 있는 것이다.
