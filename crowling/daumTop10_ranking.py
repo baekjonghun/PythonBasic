@@ -22,4 +22,4 @@ top10 = soup.find('ol' , class_ = 'list_hotissue issue_row').find_all(tabindex =
 
 
 for(index , value) in  enumerate(top10 , 1):
-    print('{}, {} , {} '.format(index , value.string , value))
+    print('{}, {} , {} '.format(index , value.string , value.get('href'))
