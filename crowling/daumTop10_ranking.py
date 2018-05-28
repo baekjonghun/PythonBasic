@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # 작성자:백종훈
-# 작성일:2018-05-27
-#제목:daum 금융 순위  1 ~3위 까지 데이터 수집
+# 작성일:2018-05-28
+#제목:daum keyword Top10 data insert~~
 
 
 import urllib.request as dl
